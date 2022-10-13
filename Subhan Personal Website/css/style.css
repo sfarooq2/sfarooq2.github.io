@@ -1,0 +1,226 @@
+body{
+    background-color: black; 
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#About_body, #Link_body{
+    color: slateblue;
+}
+#Contact_Body{
+    color: green
+}
+#Project_head, #Rec_proj, #Upc_proj{
+    color: crimson;
+    text-align: left;
+}
+header{
+    text-align: center;
+    color: silver
+    
+}
+nav{
+    text-align: right;
+}
+#About{
+    color: slateblue;
+}
+#Project{
+    color: green;
+}
+#Contact{
+    color: red;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+#About_pic{
+    text-align: left;
+}
+#Project_pic{
+    padding-left: 100px;
+}
+#Contact_pic{
+    text-align: right;
+}
+#Subhan, #Subhan2, #proj_img{
+    display: none;
+}
+footer{
+    text-align: center;
+    color: silver;
+}
+@media screen and ( min-width : 800px ) {
+    body
+     { 
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+         
+     }
+     img{
+        display: block;
+        width: 100px;
+        height: 100px;
+     }
+     #proj_img{
+        display: inline;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+     }
+     #About_body{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+     }
+     #Link_body{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: end;
+        text-align: center;
+        
+
+     }
+     #Project_head{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: end;
+        text-align: center;
+        color: crimson;
+     }
+     #Rec_proj{
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: left;
+        color: crimson;
+        padding-left: 150px;
+        
+     }
+
+     #Upc_proj{
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding-left: 500px;
+        color: crimson;
+     }
+     #logos{
+        display: flex;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: end;
+        align-items: center;
+        justify-content: center;
+     }
+     #Contact_Body{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        text-align: center;
+     }
+     #Subhan2{
+        display: block;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 300px;
+        height: 300px;
+        margin-left: 250px;
+     }
+  
+     hr{
+        display: none;
+     }
+     
+     header{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+nav{
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: end;
+    
+}
+
+#About{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    border: skyblue solid 2px;
+    
+}
+#Project{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    border: greenyellow solid 2px;
+}
+#Contact{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: crimson solid 2px;
+    text-align: center;
+}
+#Subhan{
+    display: block;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    width: 300px;
+    height: 300px;
+}
+#About_pic{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#Contact_pic{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#Projects_pic{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 6;
+    grid-column-end: 6;
+    text-align: center;
+}
+     
+}
